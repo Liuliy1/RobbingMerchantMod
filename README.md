@@ -13,7 +13,7 @@ Steam链接： https://steamcommunity.com/sharedfiles/filedetails/?id=3235423149
 
 第一次制作mod，欢迎指出bug。
 
-## 参考：
+## 参考借鉴：
 
 制作时，参考了以下教程：
 
@@ -21,4 +21,4 @@ Steam链接： https://steamcommunity.com/sharedfiles/filedetails/?id=3235423149
 
 [杀戮尖塔MOD制作详解（1）基础环境搭建 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/403468512)
 
-以及借鉴了崩坠mod(Downfall)https://steamcommunity.com/sharedfiles/filedetails/?id=1610056683&searchtext=downfall的部分代码
+以及借鉴了崩坠mod(Downfall)的部分代码https://steamcommunity.com/sharedfiles/filedetails/?id=1610056683&searchtext=downfall

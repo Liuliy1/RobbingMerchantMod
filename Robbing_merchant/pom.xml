@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.liuliy</groupId>
+    <artifactId>Robbing_merchant</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>Robbing_merchants</name>
+
+    <description>>Modified the merchant's room to allow you to rob the merchant..</description>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <Steam.path>D:\steam\steamapps</Steam.path>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.megacrit.cardcrawl</groupId>
+            <artifactId>slaythespire</artifactId>
+            <version>2020-11-30</version>
+            <scope>system</scope>
+            <systemPath>${Steam.path}/common/SlayTheSpire/desktop-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>basemod</groupId>
+            <artifactId>basemod</artifactId>
+            <version>5.33.1</version>
+            <scope>system</scope>
+            <systemPath>${Steam.path}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>ModTheSpire</artifactId>
+            <version>3.23.2</version>
+            <scope>system</scope>
+            <systemPath>${Steam.path}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*.xcf</exclude>
+                        <exclude>**/*.pl</exclude>
+                        <exclude>**/*.svg</exclude>
+                        <exclude>**/Makefile</exclude>
+                        <exclude>**/.goutputstream</exclude>
+                        <exclude>img/relics/large</exclude>
+                        <exclude>img/relics/large/*</exclude>
+                        <exclude>img/shop/develop</exclude>
+                        <exclude>img/shop/develop/*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <copy file="target/${project.artifactId}.jar" tofile="${Steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
+                            </target>
+
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

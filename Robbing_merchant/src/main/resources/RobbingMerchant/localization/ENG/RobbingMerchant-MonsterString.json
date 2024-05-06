@@ -1,0 +1,16 @@
+{
+  "RobbingMerchant:MerchantInRob":
+  {
+    "NAME": "Merchant",
+    "MOVES": [
+      "Strengthening form!",
+      "Splash-type Customized Potion!",
+      "Special juice!！"
+    ],
+    "DIALOG": [
+      "Why is it you again?",
+      "Business is off while friendship is on……",
+      "Sigh, everything's yours, everything's yours."
+    ]
+  }
+}

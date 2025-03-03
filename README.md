@@ -9,9 +9,15 @@ Allow you to rob merchants in SlayTheSpire
 
 Steam链接： https://steamcommunity.com/sharedfiles/filedetails/?id=3235423149
 
+项目复盘：https://www.liuliygames.top/2025/02/25/%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%94mod%E5%BC%80%E5%8F%91%E5%A4%8D%E7%9B%98/
 
+技术总结：
+- java类
+- 继承
+- 接口
+- patch
+- 反编译jar
 
-第一次制作mod，欢迎指出bug。
 
 ## 参考借鉴：
 
